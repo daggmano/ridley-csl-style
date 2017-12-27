@@ -1,0 +1,116 @@
+{
+    "bird": 	{
+		"id": "bird",
+		"type": "entry-dictionary",
+		"title": "Christ",
+		"container-title": "Dictionary of Jesus and the Gospels",
+		"publisher": "IVP Academic",
+		"publisher-place": "Downers Grove",
+		"page": "116-125",
+		"edition": "2",
+		"event-place": "Downers Grove",
+		"note": "DJG",
+		"author": [
+			{
+				"family": "Bird",
+				"given": "Michael F."
+			}
+		],
+		"editor": [
+			{
+				"family": "Green",
+				"given": "Joel B."
+			},
+			{
+				"family": "Brown",
+				"given": "Jeannine K."
+			},
+			{
+				"family": "Perrin",
+				"given": "Nicholas"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	},
+    "hamilton": {
+		"id": "hamilton",
+		"type": "article-journal",
+		"title": "Rushing Wind and Organ Music: Toward Luke's Theology of the Spirit in Acts",
+		"container-title": "Reformed Theological Review",
+		"page": "15-33",
+		"volume": "65",
+		"shortTitle": "Rushing Wind",
+		"journalAbbreviation": "RTR",
+		"author": [
+			{
+				"family": "Hamilton",
+				"given": "James M."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2006"
+				]
+			]
+		}
+	},
+    "hurtado": 	{
+		"id": "hurtado",
+		"type": "chapter",
+		"title": "Following Jesus in the Gospel of Mark — And Beyond",
+		"container-title": "Patterns of Discipleship in the New Testament",
+		"publisher": "Eerdmans",
+		"publisher-place": "Grand Rapids",
+		"page": "9-29",
+		"event-place": "Grand Rapids",
+		"shortTitle": "Following Jesus",
+		"author": [
+			{
+				"family": "Hurtado",
+				"given": "Larry W."
+			}
+		],
+		"editor": [
+			{
+				"family": "Longenecker",
+				"given": "Richard N."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1996"
+				]
+			]
+		}
+	},
+    "wright": {
+        "id": "wright",
+        "type": "book",
+        "title": "The Mission of God: Unlocking the Bible's Grand Narrative",
+        "publisher": "Inter-Varsity Press",
+        "publisher-place": "Nottingham",
+        "event-place": "Nottingham",
+        "shortTitle": "Mission of God",
+        "author": [
+            {
+                "family": "Wright",
+                "given": "Christopher J. H."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2006"
+                ]
+            ]
+        }
+    }
+}
