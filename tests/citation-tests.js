@@ -147,4 +147,41 @@ describe('Citation tests', function() {
             expect(result).toBe('Bird, ‘Christ’, 123.');
         });
     });
+
+    describe('Specific examples', function() {
+        it('cites from A New Eusebius as expected - includes literal name', function() {
+            var style = loadXml('./ridley-sbl.csl');
+            var citeproc = new CSL.Engine(getSys(), style);
+
+            var citationItem = {
+                id: 'clement',
+                locator: '8',
+                label: 'page'
+            };
+        
+            citeproc.updateItems(['clement']);
+
+            var result = citeproc.makeCitationCluster([citationItem]);
+
+            expect(result).toBe('Clement of Rome, ‘First Epistle to the Corinthians, Section 1.1’, in <i>A New Eusebius: Documents Illustrating the History of the Church to A.D. 337</i>, ed. James Stevenson (London: SPCK Publishing, 1987), 8.');
+        });
+
+        it('cites from A New Eusebius as expected - includes literal name - short style', function() {
+            var style = loadXml('./ridley-sbl.csl');
+            var citeproc = new CSL.Engine(getSys(), style);
+
+            var citationItem = {
+                id: 'clement',
+                locator: '8',
+                label: 'page',
+                position: ibidWithLocator
+            };
+        
+            citeproc.updateItems(['clement']);
+
+            var result = citeproc.makeCitationCluster([citationItem]);
+
+            expect(result).toBe('Clement of Rome, ‘First Epistle to the Corinthinans’, 8.');
+        });
+    });
 });

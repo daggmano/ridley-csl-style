@@ -46,4 +46,17 @@ describe('Bibliography tests', function() {
             expect(result[1][0].trim()).toBe('<div class="csl-entry">Bird, Michael F. ‘Christ’. Pages 116–125 in <i>Dictionary of Jesus and the Gospels</i>. Edited by Joel B. Green, Jeannine K. Brown and Nicholas Perrin. 2nd ed. Downers Grove: IVP Academic, 2013.</div>');
         });
     });
+
+    describe('Specific examples', function() {
+        it('cites from A New Eusebius as expected - includes literal name', function() {
+            var style = loadXml('./ridley-sbl.csl');
+            var citeproc = new CSL.Engine(getSys(), style);
+
+            citeproc.updateItems(['clement']);
+
+            var result = citeproc.makeBibliography();
+
+            expect(result[1][0].trim()).toBe('<div class="csl-entry">Clement of Rome. ‘First Epistle to the Corinthians, Section 1.1’. Pages 7–9 in <i>A New Eusebius: Documents Illustrating the History of the Church to A.D. 337</i>. Edited by James Stevenson. London: SPCK Publishing, 1987.</div>');
+        });
+    });
 });

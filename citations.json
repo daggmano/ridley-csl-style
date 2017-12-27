@@ -38,6 +38,35 @@
 			]
 		}
 	},
+	"clement": {
+		"id": "clement",
+		"type": "chapter",
+		"title": "First Epistle to the Corinthians, Section 1.1",
+		"container-title": "A New Eusebius: Documents Illustrating the History of the Church to A.D. 337",
+		"publisher": "SPCK Publishing",
+		"publisher-place": "London",
+		"page": "7-9",
+		"event-place": "London",
+		"shortTitle": "First Epistle to the Corinthinans",
+		"author": [
+			{
+				"literal": "Clement of Rome"
+			}
+		],
+		"editor": [
+			{
+				"family": "Stevenson",
+				"given": "James"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1987"
+				]
+			]
+		}
+	},
     "hamilton": {
 		"id": "hamilton",
 		"type": "article-journal",
