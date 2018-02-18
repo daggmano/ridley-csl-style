@@ -1,5 +1,30 @@
 {
-    "bird": 	{
+	"boda": {
+		"id": "boda",
+		"type": "book",
+		"title": "Dictionary of the Old Testament: Prophets",
+		"publisher": "IVP Academic",
+		"publisher-place": "Downers Grove",
+		"event-place": "Downers Grove",
+		"editor": [
+			{
+				"family": "Boda",
+				"given": "Mark J."
+			},
+			{
+				"family": "McConville",
+				"given": "J. Gordon"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2012"
+				]
+			]
+		}
+	},
+    "bird": {
 		"id": "bird",
 		"type": "entry-dictionary",
 		"title": "Christ",
@@ -90,7 +115,7 @@
 			]
 		}
 	},
-    "hurtado": 	{
+    "hurtado": {
 		"id": "hurtado",
 		"type": "chapter",
 		"title": "Following Jesus in the Gospel of Mark — And Beyond",

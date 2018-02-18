@@ -47,6 +47,19 @@ describe('Bibliography tests', function() {
         });
     });
 
+    describe('2018 Student Manual tests', function() {
+        it ('cites multiple authors and editors', function() {
+            var style = loadXml('./ridley-sbl.csl');
+            var citeproc = new CSL.Engine(getSys(), style);
+
+            citeproc.updateItems(['boda']);
+
+            var result = citeproc.makeBibliography();
+
+            expect(result[1][0].trim()).toBe('<div class="csl-entry">Boda, Mark J., and J. Gordon McConville, eds. <i>Dictionary of the Old Testament: Prophets</i>. Downers Grove: IVP Academic, 2012.</div>');
+        });
+    });
+
     describe('Specific examples', function() {
         it('cites from A New Eusebius as expected - includes literal name', function() {
             var style = loadXml('./ridley-sbl.csl');
