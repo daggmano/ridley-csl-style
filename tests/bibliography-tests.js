@@ -52,11 +52,36 @@ describe('Bibliography tests', function() {
             var style = loadXml('./ridley-sbl.csl');
             var citeproc = new CSL.Engine(getSys(), style);
 
-            citeproc.updateItems(['boda']);
+            citeproc.updateItems(['boda', 'hill']);
 
             var result = citeproc.makeBibliography();
 
             expect(result[1][0].trim()).toBe('<div class="csl-entry">Boda, Mark J., and J. Gordon McConville, eds. <i>Dictionary of the Old Testament: Prophets</i>. Downers Grove: IVP Academic, 2012.</div>');
+            expect(result[1][1].trim()).toBe('<div class="csl-entry">Hill, Andrew E., and John H. Walton. <i>A Survey of the Old Testament</i>. 3rd ed. Grand Rapids: Zondervan, 2009.</div>');
+        });
+
+        it('cites a commentary / book series', function() {
+            var style = loadXml('./ridley-sbl.csl');
+            var citeproc = new CSL.Engine(getSys(), style);
+
+            citeproc.updateItems(['beasley', 'walton', 'wilson']);
+
+            var result = citeproc.makeBibliography();
+
+            expect(result[1][0].trim()).toBe('<div class="csl-entry">Beasley-Murray, George R. <i>John</i>. 2nd ed. WBC 36. Dallas: Word, 1999.</div>');
+            expect(result[1][1].trim()).toBe('<div class="csl-entry">Walton, John H. <i>Job</i>. NIVAC. Grand Rapids: Zondervan, 2012.</div>');
+            expect(result[1][2].trim()).toBe('<div class="csl-entry">Wilson, Gerald H. ‘King, Messiah, and the Reign of God: Revisiting the Royal Psalms and the Shape of the Psalter‘. Pages 391-406 in <i>The Book of Psalms: Composition and Reception</i>. Editied by Peter W. Flint and Patrick D. Miller VTSup 99. Leiden: Brill, 2005.</div>');
+        });
+
+        it('cites multiple publishers', function() {
+            var style = loadXml('./ridley-sbl.csl');
+            var citeproc = new CSL.Engine(getSys(), style);
+
+            citeproc.updateItems(['ciampa']);
+
+            var result = citeproc.makeBibliography();
+
+            expect(result[1][0].trim()).toBe('<div class="csl-entry">Ciampa, Roy E., and Brian S. Rosner. <i>The First Letter to the Corinthians</i>. PNTC. Grand Rapids: Eerdmans; Nottingham: Apollos, 2010.</div>');
         });
     });
 

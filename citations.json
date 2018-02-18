@@ -1,4 +1,29 @@
 {
+	"beasley": {
+		"id": "beasley",
+		"type": "book",
+		"title": "John",
+		"collection-title": "WBC",
+		"collection-number": "36",
+		"publisher": "Word",
+		"publisher-place": "Dallas",
+		"edition": "2nd",
+		"event-place": "Dallas",
+		"ISBN": "978-0-8499-0624-4",
+		"editor": [
+			{
+				"family": "Beasley-Murray",
+				"given": "George R."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1999"
+				]
+			]
+		}
+	},
 	"boda": {
 		"id": "boda",
 		"type": "book",
@@ -63,6 +88,34 @@
 			]
 		}
 	},
+	"ciampa": {
+		"id": "ciampa",
+		"type": "book",
+		"title": "The First Letter to the Corinthians",
+		"collection-title": "PNTC",
+		"publisher": "Eerdmans; Apollos",
+		"publisher-place": "Grand Rapids; Nottingham",
+		"event-place": "Grand Rapids; Nottingham",
+		"ISBN": "978-1-84474-484-8",
+		"shortTitle": "1 Corinthians",
+		"author": [
+			{
+				"family": "Ciampa",
+				"given": "Roy E."
+			},
+			{
+				"family": "Rosner",
+				"given": "Brian S."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2010"
+				]
+			]
+		}
+	},
 	"clement": {
 		"id": "clement",
 		"type": "chapter",
@@ -115,6 +168,34 @@
 			]
 		}
 	},
+	"hill": {
+		"id": "hill",
+		"type": "book",
+		"title": "A Survey of the Old Testament",
+		"publisher": "Zondervan",
+		"publisher-place": "Grand Rapids",
+		"edition": "3rd",
+		"event-place": "Grand Rapids",
+		"ISBN": "978-0-310-28095-8",
+		"shortTitle": "Survey of the OT",
+		"author": [
+			{
+				"family": "Hill",
+				"given": "Andrew E."
+			},
+			{
+				"family": "Walton",
+				"given": "John H."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2009"
+				]
+			]
+		}
+	},
     "hurtado": {
 		"id": "hurtado",
 		"type": "chapter",
@@ -141,6 +222,61 @@
 			"date-parts": [
 				[
 					"1996"
+				]
+			]
+		}
+	},
+	"walton": {
+		"id": "walton",
+		"type": "book",
+		"title": "Job",
+		"collection-title": "NIVAC",
+		"publisher": "Zondervan",
+		"publisher-place": "Grand Rapids",
+		"event-place": "Grand Rapids",
+		"author": [
+			{
+				"family": "Walton",
+				"given": "John H."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2012"
+				]
+			]
+		}
+	},
+	"wilson": {
+		"id": "wilson",
+		"type": "chapter",
+		"title": "King, Messiah, and the Reign of God: Revisiting the Royal Psalms and the Shape of the Psalter",
+		"container-title": "The Book of Psalms: Composition and Reception",
+		"publisher": "Brill",
+		"publisher-place": "Leiden",
+		"page": "391-406",
+		"event-place": "Leiden",
+		"author": [
+			{
+				"family": "Wilson",
+				"given": "Gerald H."
+			}
+		],
+		"editor": [
+			{
+				"family": "Flint",
+				"given": "Peter W."
+			},
+			{
+				"family": "Miller",
+				"given": "Patrick D."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2005"
 				]
 			]
 		}
