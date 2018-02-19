@@ -1,4 +1,36 @@
 {
+	"augustine": {
+		"id": "augustine",
+		"type": "chapter",
+		"title": "The Letters of St. Augustin",
+		"container-title": "Nicene and Post-Nicene Christianity",
+		"collection-title": "1",
+		"publisher": "Hendrickson",
+		"publisher-place": "Peabody",
+		"page": "209-593",
+		"volume": "1",
+		"number-of-volumes": "14",
+		"event-place": "Peabody",
+		"ISBN": "978-0-8028-8049-9",
+		"editor": [
+			{
+				"family": "Schaff",
+				"given": "Philip"
+			}
+		],
+		"author": [
+			{
+				"literal": "Augustine"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1989"
+				]
+			]
+		}
+	},
 	"beasley": {
 		"id": "beasley",
 		"type": "book",
@@ -88,6 +120,43 @@
 			]
 		}
 	},
+	"calvin": {
+		"id": "calvin",
+		"type": "book",
+		"title": "The Institutes of the Christian Religion",
+		"collection-title": "LCC",
+		"collection-number": "20-21",
+		"publisher": "Westminster",
+		"publisher-place": "Philadelphia",
+		"number-of-volumes": "2",
+		"event-place": "Philadelphia",
+		"shortTitle": "Institutes",
+		"author": [
+			{
+				"family": "Calvin",
+				"given": "John"
+			}
+		],
+		"translator": [
+			{
+				"family": "Battles",
+				"given": "Ford Lewis"
+			}
+		],
+		"editor": [
+			{
+				"family": "McNeill",
+				"given": "John T."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1960"
+				]
+			]
+		}
+	},
 	"ciampa": {
 		"id": "ciampa",
 		"type": "book",
@@ -141,6 +210,53 @@
 			"date-parts": [
 				[
 					"1987"
+				]
+			]
+		}
+	},
+	"elowsky": {
+		"id": "elowsky",
+		"type": "book",
+		"title": "John 11-21",
+		"collection-title": "Ancient Christian Commentary on Scripture : New Testament",
+		"publisher": "InterVarsity Press",
+		"publisher-place": "Downers Grove",
+		"volume": "4B",
+		"event-place": "Downers Grove",
+		"ISBN": "978-0-8308-1489-3",
+		"shortTitle": "ACCS",
+		"editor": [
+			{
+				"family": "Elowsky",
+				"given": "Joel C."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2007"
+				]
+			]
+		}
+	},
+	"ferdinando": {
+		"id": "ferdinando",
+		"type": "article-journal",
+		"title": "Mission: A Problem of Definition",
+		"container-title": "Themelios",
+		"page": "46-59",
+		"volume": "33",
+		"issue": "1",
+		"author": [
+			{
+				"family": "Ferdinando",
+				"given": "Keith"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2008"
 				]
 			]
 		}

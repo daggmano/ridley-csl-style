@@ -83,6 +83,30 @@ describe('Bibliography tests', function() {
 
             expect(result[1][0].trim()).toBe('<div class="csl-entry">Ciampa, Roy E., and Brian S. Rosner. <i>The First Letter to the Corinthians</i>. PNTC. Grand Rapids: Eerdmans; Nottingham: Apollos, 2010.</div>');
         });
+
+        it('cites a journal issue', function() {
+            var style = loadXml('./ridley-sbl.csl');
+            var citeproc = new CSL.Engine(getSys(), style);
+
+            citeproc.updateItems(['ferdinando']);
+
+            var result = citeproc.makeBibliography();
+
+            expect(result[1][0].trim()).toBe('<div class="csl-entry">Ferdinando, Keith. ‘Mission: A Problem of Definition’. <i>Themelios</i> 33.1 (2008): 46–59.</div>');
+        });
+
+        it('cites ancient documents', function() {
+            var style = loadXml('./ridley-sbl.csl');
+            var citeproc = new CSL.Engine(getSys(), style);
+
+            citeproc.updateItems(['augustine', 'calvin', 'elowsky']);
+
+            var result = citeproc.makeBibliography();
+
+            expect(result[1][0].trim()).toBe('<div class="csl-entry">Augustine. <i>The Letters fo St. Augustin</i>. Pages 209-593 in vol. 1 of <i>The Nicene ans Post-Nicene Fathers</i>, Series 1. Edited vy Philip Schaff. 1886-1889. 14 vols. Repr., Peabody: Hendrickson, 1994.</div>');
+            expect(result[1][1].trim()).toBe('<div class="csl-entry">Calvin, John. <i>The Institutes of the Christian Religion</i>. Translated by Ford Lewis Battles. Edited by John T. McNeill, 2 vols. LCC 20-21. Pjiladelphia: Westminster, 1960.</div>');
+            expect(result[1][2].trim()).toBe('<div class="csl-entry">Elowsky, Joel C., ed. <i>John</i> 11-21. ACCS 4B. Downers Grove: InterVarsity Press, 2007.</div>');
+        });
     });
 
     describe('Specific examples', function() {
