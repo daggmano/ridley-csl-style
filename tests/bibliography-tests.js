@@ -70,7 +70,7 @@ describe('Bibliography tests', function() {
 
             expect(result[1][0].trim()).toBe('<div class="csl-entry">Beasley-Murray, George R. <i>John</i>. 2nd ed. WBC 36. Dallas: Word, 1999.</div>');
             expect(result[1][1].trim()).toBe('<div class="csl-entry">Walton, John H. <i>Job</i>. NIVAC. Grand Rapids: Zondervan, 2012.</div>');
-            expect(result[1][2].trim()).toBe('<div class="csl-entry">Wilson, Gerald H. ‘King, Messiah, and the Reign of God: Revisiting the Royal Psalms and the Shape of the Psalter‘. Pages 391-406 in <i>The Book of Psalms: Composition and Reception</i>. Editied by Peter W. Flint and Patrick D. Miller VTSup 99. Leiden: Brill, 2005.</div>');
+            expect(result[1][2].trim()).toBe('<div class="csl-entry">Wilson, Gerald H. ‘King, Messiah, and the Reign of God: Revisiting the Royal Psalms and the Shape of the Psalter’. Pages 391–406 in <i>The Book of Psalms: Composition and Reception</i>. Edited by Peter W. Flint and Patrick D. Miller. VTSup 99. Leiden: Brill, 2005.</div>');
         });
 
         it('cites multiple publishers', function() {
@@ -104,7 +104,7 @@ describe('Bibliography tests', function() {
             var result = citeproc.makeBibliography();
 
             expect(result[1][0].trim()).toBe('<div class="csl-entry">Augustine. <i>The Letters fo St. Augustin</i>. Pages 209-593 in vol. 1 of <i>The Nicene ans Post-Nicene Fathers</i>, Series 1. Edited vy Philip Schaff. 1886-1889. 14 vols. Repr., Peabody: Hendrickson, 1994.</div>');
-            expect(result[1][1].trim()).toBe('<div class="csl-entry">Calvin, John. <i>The Institutes of the Christian Religion</i>. Translated by Ford Lewis Battles. Edited by John T. McNeill, 2 vols. LCC 20-21. Pjiladelphia: Westminster, 1960.</div>');
+            expect(result[1][1].trim()).toBe('<div class="csl-entry">Calvin, John. <i>The Institutes of the Christian Religion</i>. Translated by Ford Lewis Battles. Edited by John T. McNeill. 2 vols. LCC 20–21. Philadelphia: Westminster, 1960.</div>');
             expect(result[1][2].trim()).toBe('<div class="csl-entry">Elowsky, Joel C., ed. <i>John</i> 11-21. ACCS 4B. Downers Grove: InterVarsity Press, 2007.</div>');
         });
     });
