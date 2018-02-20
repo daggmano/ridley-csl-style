@@ -103,7 +103,7 @@ describe('Bibliography tests', function() {
 
             var result = citeproc.makeBibliography();
 
-            expect(result[1][0].trim()).toBe('<div class="csl-entry">Augustine. <i>The Letters fo St. Augustin</i>. Pages 209-593 in vol. 1 of <i>The Nicene ans Post-Nicene Fathers</i>, Series 1. Edited vy Philip Schaff. 1886-1889. 14 vols. Repr., Peabody: Hendrickson, 1994.</div>');
+            expect(result[1][0].trim()).toBe('<div class="csl-entry">Augustine. <i>The Letters of St. Augustin</i>. Pages 209-593 in vol. 1 of <i>The Nicene and Post-Nicene Fathers</i>, Series 1. Edited by Philip Schaff. 1886-1889. 14 vols. Repr., Peabody: Hendrickson, 1994.</div>');
             expect(result[1][1].trim()).toBe('<div class="csl-entry">Calvin, John. <i>The Institutes of the Christian Religion</i>. Translated by Ford Lewis Battles. Edited by John T. McNeill. 2 vols. LCC 20–21. Philadelphia: Westminster, 1960.</div>');
             expect(result[1][2].trim()).toBe('<div class="csl-entry">Elowsky, Joel C., ed. <i>John</i> 11-21. ACCS 4B. Downers Grove: InterVarsity Press, 2007.</div>');
         });
