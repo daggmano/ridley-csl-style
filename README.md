@@ -8,6 +8,10 @@ to better match Ridley's specification.
 Download or clone the repo, and from a terminal window `cd` to the root folder of the project.  Restore the required node packages, and then run the tests.
 
     npm install
-    npm run test
+    npm test
+
+Note that the use of `PhantomJS` may cause issues. If you are unable to run tests using the above command, you can run the tests through Chrome.
+
+    npm run chrome 
 
 More information will be added as the author gets time...
