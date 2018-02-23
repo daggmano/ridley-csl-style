@@ -19,8 +19,6 @@ Note that the use of `PhantomJS` may cause issues. If you are unable to run test
 ### Example 2.3.4 ###
 As Zotero does not have a `shortContainerTitle` field for dictionary entries, the short container name (`DJG` in this case, cited in the First Footnote citation) is placed in the `Note` field (appears as `Extra` in Zotero).
 
-### Example 3.9.2b ###
-As previously seen, Zotero does not support name prefixes and so `Patrick D. Miller Jr` becomes `Patrick D. Miller`.
 
 
 

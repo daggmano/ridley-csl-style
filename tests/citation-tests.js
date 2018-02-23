@@ -205,7 +205,7 @@ describe('Citation tests', function() {
 
             var result = citeproc.makeCitationCluster([citationItem]);
 
-            expect(result).toBe('Craig L. Blomberg, <i>Jesus and the Gospels: An Introduction and Survey</i>, 2nd ed. (Nashville: B&H Academic), Kindle edition, ch 14, ‘Parables: Interpretive Method’.');
+            expect(result).toBe('Craig L. Blomberg, <i>Jesus and the Gospels: An Introduction and Survey</i>, 2nd ed. (Nashville: B&#38;H Academic), Kindle edition, ch. 14, ‘Parables: Interpretive Method’.');
         });
 
         it('cites electronic sources - short style (ex 3.9.3 (i))', function() {
@@ -222,7 +222,7 @@ describe('Citation tests', function() {
 
             var result = citeproc.makeCitationCluster([citationItem]);
 
-            expect(result).toBe('Blomberg, <i>Jesus and the Gospels</i>, ch 14, ‘Miracles: Historicity’.');
+            expect(result).toBe('Blomberg, <i>Jesus and the Gospels</i>, ch. 14, ‘Miracles: Historicity’.');
         });
 
         it('cites electronic sources (ex 3.9.3 (ii))', function() {
