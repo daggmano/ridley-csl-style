@@ -42,7 +42,7 @@
 		"edition": "2nd",
 		"event-place": "Dallas",
 		"ISBN": "978-0-8499-0624-4",
-		"editor": [
+		"author": [
 			{
 				"family": "Beasley-Murray",
 				"given": "George R."
@@ -55,6 +55,44 @@
 				]
 			]
 		}
+	},
+	"bezzant": {
+		"id": "bezzant",
+		"type": "post-weblog",
+		"title": "Jonathon Edwards on Mentoring",
+		"container-title": "Euangelion",
+		"URL": "http://www.patheos.com/blogs/euangelion/2014/11/jonathon-edwards-on-mentoring",
+		"author": [
+			{
+				"family": "Bezzant",
+				"given": "Rhys"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2014",
+					11,
+					17
+				]
+			]
+		}
+	},
+	"blomberg": {
+		"id": "blomberg",
+		"type": "book",
+		"title": "Jesus and the Gospels: An Introduction and Survey",
+		"publisher": "B&H Academic",
+		"publisher-place": "Nashville",
+		"edition": "2",
+		"event-place": "Nashville",
+		"note": "Kindle Edition",
+		"author": [
+			{
+				"family": "Blomberg",
+				"given": "Craig L."
+			}
+		]
 	},
 	"boda": {
 		"id": "boda",
@@ -162,9 +200,8 @@
 		"type": "book",
 		"title": "The First Letter to the Corinthians",
 		"collection-title": "PNTC",
-		"publisher": "Eerdmans; Apollos",
-		"publisher-place": "Grand Rapids; Nottingham",
-		"event-place": "Grand Rapids; Nottingham",
+		"publisher-place": "Grand Rapids: Eerdmans",
+		"publisher": "Nottingham: Apollos",
 		"ISBN": "978-1-84474-484-8",
 		"shortTitle": "1 Corinthians",
 		"author": [
@@ -218,10 +255,10 @@
 		"id": "elowsky",
 		"type": "book",
 		"title": "John 11-21",
-		"collection-title": "Ancient Christian Commentary on Scripture : New Testament",
+		"collection-title": "ACCS",
+		"collection-number": "4B",
 		"publisher": "InterVarsity Press",
 		"publisher-place": "Downers Grove",
-		"volume": "4B",
 		"event-place": "Downers Grove",
 		"ISBN": "978-0-8308-1489-3",
 		"shortTitle": "ACCS",
@@ -273,7 +310,8 @@
 		"author": [
 			{
 				"family": "Hamilton",
-				"given": "James M."
+				"given": "James M.",
+				"suffix": "Jr."
 			}
 		],
 		"issued": {
@@ -369,11 +407,11 @@
 		"type": "chapter",
 		"title": "King, Messiah, and the Reign of God: Revisiting the Royal Psalms and the Shape of the Psalter",
 		"container-title": "The Book of Psalms: Composition and Reception",
+		"collection-title": "VTSup 99",
 		"publisher": "Brill",
 		"publisher-place": "Leiden",
 		"page": "391-406",
 		"event-place": "Leiden",
-		"collection-title": "VTSup 99",
 		"author": [
 			{
 				"family": "Wilson",
@@ -387,7 +425,8 @@
 			},
 			{
 				"family": "Miller",
-				"given": "Patrick D."
+				"given": "Patrick D.",
+				"suffix": "Jr."
 			}
 		],
 		"issued": {

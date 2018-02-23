@@ -2,8 +2,8 @@ var ibidWithLocator = 1;
 var ibid = 2;
 
 describe('Citation tests', function() {
-    describe('2017 Student Manual tests', function() {
-        it('cites a book', function() {
+    describe('2018 Student Manual tests', function() {
+        it('cites a book (ex 2.3.1)', function() {
             var style = loadXml('./ridley-sbl.csl');
             var citeproc = new CSL.Engine(getSys(), style);
 
@@ -16,11 +16,10 @@ describe('Citation tests', function() {
             citeproc.updateItems(['wright']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
-
             expect(result).toBe('Christopher J. H. Wright, <i>The Mission of God: Unlocking the Bible’s Grand Narrative</i> (Nottingham: Inter-Varsity Press, 2006), 199–201.');
         });
 
-        it('cites a book - short style', function() {
+        it('cites a book - short style (ex 2.3.1)', function() {
             var style = loadXml('./ridley-sbl.csl');
             var citeproc = new CSL.Engine(getSys(), style);
 
@@ -34,11 +33,10 @@ describe('Citation tests', function() {
             citeproc.updateItems(['wright']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
-
             expect(result).toBe('Wright, <i>Mission of God</i>, 200.');
         });
 
-        it('cites an essay in an edited book', function() {
+        it('cites an essay in an edited book (ex 2.3.2)', function() {
             var style = loadXml('./ridley-sbl.csl');
             var citeproc = new CSL.Engine(getSys(), style);
 
@@ -51,11 +49,10 @@ describe('Citation tests', function() {
             citeproc.updateItems(['hurtado']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
-
             expect(result).toBe('Larry W. Hurtado, ‘Following Jesus in the Gospel of Mark — And Beyond’, in <i>Patterns of Discipleship in the New Testament</i>, ed. Richard N. Longenecker (Grand Rapids: Eerdmans, 1996), 15–17.');
         });
 
-        it('cites an essay in an edited book - short style', function() {
+        it('cites an essay in an edited book - short style (ex 2.3.2)', function() {
             var style = loadXml('./ridley-sbl.csl');
             var citeproc = new CSL.Engine(getSys(), style);
 
@@ -69,11 +66,10 @@ describe('Citation tests', function() {
             citeproc.updateItems(['hurtado']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
-
             expect(result).toBe('Hurtado, ‘Following Jesus’, 19–21.');
         });
 
-        it('cites a journal article', function() {
+        it('cites a journal article (ex 2.3.3)', function() {
             var style = loadXml('./ridley-sbl.csl');
             var citeproc = new CSL.Engine(getSys(), style);
 
@@ -87,11 +83,10 @@ describe('Citation tests', function() {
 
             var result = citeproc.makeCitationCluster([citationItem]);
 
-            // Note: the citation and expected result differ from that given in the Ridley Student Manual 2017 as Zotero is unable to handle 'Jr.' suffixes for names.
-            expect(result).toBe('James M. Hamilton, ‘Rushing Wind and Organ Music: Toward Luke’s Theology of the Spirit in Acts’, <i>RTR</i> 65 (2006): 29–32.');
+            expect(result).toBe('James M. Hamilton Jr., ‘Rushing Wind and Organ Music: Toward Luke’s Theology of the Spirit in Acts’, <i>RTR</i> 65 (2006): 29–32.');
         });
 
-        it('cites a journal article - short style', function() {
+        it('cites a journal article - short style (ex 2.3.3)', function() {
             var style = loadXml('./ridley-sbl.csl');
             var citeproc = new CSL.Engine(getSys(), style);
 
@@ -106,11 +101,10 @@ describe('Citation tests', function() {
 
             var result = citeproc.makeCitationCluster([citationItem]);
 
-            // Note: the citation and expected result differ from that given in the Ridley Student Manual 2017 as Zotero is unable to handle 'Jr.' suffixes for names.
             expect(result).toBe('Hamilton, ‘Rushing Wind’, 17.');
         });
 
-        it('cites a dictionary or lexicon article', function() {
+        it('cites a dictionary or lexicon article (ex 2.3.4)', function() {
             var style = loadXml('./ridley-sbl.csl');
             var citeproc = new CSL.Engine(getSys(), style);
 
@@ -128,7 +122,7 @@ describe('Citation tests', function() {
             expect(result).toBe('Michael F. Bird, ‘Christ’, <i>DJG</i> 116–118.');
         });
 
-        it('cites a dictionary or lexicon article - short style', function() {
+        it('cites a dictionary or lexicon article - short style (ex 2.3.4)', function() {
             var style = loadXml('./ridley-sbl.csl');
             var citeproc = new CSL.Engine(getSys(), style);
 
@@ -146,6 +140,105 @@ describe('Citation tests', function() {
             // Note: As Zotero does not have a shortContainerTitle field for dictionary entries, the short container name is placed in the Note field (appears as Extra in Zotero)
             expect(result).toBe('Bird, ‘Christ’, 123.');
         });
+
+        it('cites ancient documents (ex 3.9.2e (i))', function() {
+            var style = loadXml('./ridley-sbl.csl');
+            var citeproc = new CSL.Engine(getSys(), style);
+
+            var citationItem = {
+                id: 'augustine',
+                locator: '28.3.5',
+                label: 'page'
+            };
+
+            citeproc.updateItems(['augustine']);
+
+            var result = citeproc.makeCitationCluster([citationItem]);
+
+            expect(result).toBe('Augustine, <i>Letters of St. Augustin</i> 28.3.5 (<i>N.P.N.F</i> 1:252).');
+        });
+
+        it('cites ancient documents (ex 3.9.2e (ii))', function() {
+            var style = loadXml('./ridley-sbl.csl');
+            var citeproc = new CSL.Engine(getSys(), style);
+
+            var citationItem = {
+                id: 'calvin',
+                locator: '165',
+                label: 'page'
+            };
+
+            citeproc.updateItems(['calvin']);
+
+            var result = citeproc.makeCitationCluster([citationItem]);
+
+            expect(result).toBe('John Calvin, <i>Inst</i>. 1.14.5, trans. Ford Lewis Battles, ed. John T. McNeill, 2 vols., LCC 20-21 (Philadelphia: Westminster, 1960), 1:165.');
+        });
+
+        it('cites ancient documents (ex 3.9.2e (iii))', function() {
+            var style = loadXml('./ridley-sbl.csl');
+            var citeproc = new CSL.Engine(getSys(), style);
+
+            var citationItem = {
+                id: 'elowsky',
+                locator: '72',
+                label: 'page'
+            };
+
+            citeproc.updateItems(['elowsky']);
+
+            var result = citeproc.makeCitationCluster([citationItem]);
+
+            expect(result).toBe('Theodore of Mopsuestia, <i>Comm</i>. John 12:38-41, cited in Joel C. Elowsky, ed., <i>John 11-21</i>, ACCS 4B (Downers Grove: InterVarsity Press, 2007), 72.');
+        });
+
+        it('cites electronic sources (ex 3.9.3 (i))', function() {
+            var style = loadXml('./ridley-sbl.csl');
+            var citeproc = new CSL.Engine(getSys(), style);
+
+            var citationItem = {
+                id: 'blomberg',
+                locator: 'ch. 14, ‘Parables: Interpretive Method’'
+            };
+
+            citeproc.updateItems(['blomberg']);
+
+            var result = citeproc.makeCitationCluster([citationItem]);
+
+            expect(result).toBe('Craig L. Blomberg, <i>Jesus and the Gospels: An Introduction and Survey</i>, 2nd ed. (Nashville: B&H Academic), Kindle edition, ch 14, ‘Parables: Interpretive Method’.');
+        });
+
+        it('cites electronic sources - short style (ex 3.9.3 (i))', function() {
+            var style = loadXml('./ridley-sbl.csl');
+            var citeproc = new CSL.Engine(getSys(), style);
+
+            var citationItem = {
+                id: 'blomberg',
+                locator: 'ch. 14, ‘Miracles: Historicity’',
+                position: ibidWithLocator
+            };
+
+            citeproc.updateItems(['blomberg']);
+
+            var result = citeproc.makeCitationCluster([citationItem]);
+
+            expect(result).toBe('Blomberg, <i>Jesus and the Gospels</i>, ch 14, ‘Miracles: Historicity’.');
+        });
+
+        it('cites electronic sources (ex 3.9.3 (ii))', function() {
+            var style = loadXml('./ridley-sbl.csl');
+            var citeproc = new CSL.Engine(getSys(), style);
+
+            var citationItem = {
+                id: 'bezzant'
+            };
+
+            citeproc.updateItems(['bezzant']);
+
+            var result = citeproc.makeCitationCluster([citationItem]);
+
+            expect(result).toBe('Rhys Bezzant, ‘Jonathon Edwards on Mentoring’, Euangelion, 17 November 2014, http://www.patheos.com/blogs/euangelion/2014/11/jonathon-edwards-on-mentoring');
+        });        
     });
 
     describe('Specific examples', function() {
