@@ -19,10 +19,12 @@ Note that the use of `PhantomJS` may cause issues. If you are unable to run test
 ### Example 2.3.4 ###
 As Zotero does not have a `shortContainerTitle` field for dictionary entries, the short container name (`DJG` in this case, cited in the First Footnote citation) is placed in the `Note` field (appears as `Extra` in Zotero).
 
+### Example 3.9.2c ###
+Zotero does not support multiple publishers / places. In order to include two (or more) publishers, one method (and the method used for the test) is to combine the first publisher and the second publisher and place into the one field. For example:
 
+    Place: Grand Rapids
+    Publisher: Eerdmans; Nottingham: Apollos
 
-
-# Check stuff from citations ex 2.3.3 #
 
 
 

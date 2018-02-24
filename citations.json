@@ -169,7 +169,7 @@
 		"publisher-place": "Philadelphia",
 		"number-of-volumes": "2",
 		"event-place": "Philadelphia",
-		"shortTitle": "Institutes",
+		"shortTitle": "Inst",
 		"author": [
 			{
 				"family": "Calvin",
@@ -201,8 +201,9 @@
 		"type": "book",
 		"title": "The First Letter to the Corinthians",
 		"collection-title": "PNTC",
-		"publisher-place": "Grand Rapids: Eerdmans",
-		"publisher": "Nottingham: Apollos",
+		"publisher": "Eerdmans; Nottingham: Apollos",
+		"publisher-place": "Grand Rapids",
+		"event-place": "Grand Rapids",
 		"ISBN": "978-1-84474-484-8",
 		"shortTitle": "1 Corinthians",
 		"author": [
