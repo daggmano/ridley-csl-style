@@ -25,7 +25,10 @@ Zotero does not support multiple publishers / places. In order to include two (o
     Place: Grand Rapids
     Publisher: Eerdmans; Nottingham: Apollos
 
+### Example 3.9.3 (i) ###
+To include the text `Kindle edition` in the citation, this text should be placed in the locator specification. For example:
 
+    Kindle edition, ch. 14, ‘Parables: Interpretive Method’
 
 
 More information will be added as the author gets time...

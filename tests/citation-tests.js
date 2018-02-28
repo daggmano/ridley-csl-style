@@ -198,7 +198,7 @@ describe('Citation tests', function() {
 
             var citationItem = {
                 id: 'blomberg',
-                locator: 'ch. 14, ‘Parables: Interpretive Method’'
+                locator: 'Kindle edition, ch. 14, ‘Parables: Interpretive Method’'
             };
 
             citeproc.updateItems(['blomberg']);

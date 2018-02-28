@@ -520,9 +520,6 @@
           </else>
         </choose>
       </if>
-      <else>
-        <text term="no date" form="short"/>
-      </else>
     </choose>
   </macro>
   <macro name="point-locators-subsequent">
