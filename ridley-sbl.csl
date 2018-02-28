@@ -316,7 +316,7 @@
         <text variable="container-title" font-style="italic" form="short"/>
       </else-if>
       <else-if type="entry-dictionary" match="none">
-        <text variable="container-title" font-style="italic"/>
+        <text variable="container-title" />
       </else-if>
     </choose>
   </macro>
@@ -495,8 +495,8 @@
         <choose>
           <if type="graphic report" match="any">
             <date variable="issued">
+              <date-part name="day" suffix=" "/>
               <date-part name="month" suffix=" "/>
-              <date-part name="day" suffix=", "/>
               <date-part name="year"/>
             </date>
           </if>
@@ -513,8 +513,8 @@
           </else-if>
           <else>
             <date variable="issued">
+              <date-part name="day" suffix=" "/>
               <date-part name="month" suffix=" "/>
-              <date-part name="day" suffix=", "/>
               <date-part name="year"/>
             </date>
           </else>
@@ -700,50 +700,100 @@
     </group>
   </macro>
   <citation et-al-min="4" et-al-use-first="1" disambiguate-add-names="true">
-    <layout suffix="." delimiter="; ">
-      <choose>
-        <if position="ibid-with-locator">
-          <group delimiter=", ">
-            <text macro="contributors-short"/>
-            <text macro="title-short"/>
-            <text macro="disambiguate-chapter"/>
-            <text macro="point-locators-subsequent"/>
-          </group>
-        </if>
-        <else-if position="ibid">
-          <group delimiter=", ">
-            <text macro="contributors-short"/>
-            <text macro="title-short"/>
-            <text macro="disambiguate-chapter"/>
-          </group>
-        </else-if>
-        <else-if position="subsequent">
-          <group delimiter=", ">
-            <text macro="contributors-short"/>
-            <text macro="title-short"/>
-            <text macro="disambiguate-chapter"/>
-            <text macro="point-locators-subsequent"/>
-          </group>
-        </else-if>
-        <else>
-          <group delimiter=", ">
-            <text macro="contributors-note"/>
-            <text macro="title-note"/>
-            <text macro="description-note"/>
-            <text macro="secondary-contributors-note"/>
-            <text macro="container-title-note"/>
-            <text macro="container-contributors-note"/>
-            <text macro="locators-note"/>
-            <text macro="collection-title-note"/>
-          </group>
-          <text macro="cite-dict"/>
-          <text macro="issue-note"/>
-          <text macro="locators-newspaper" prefix=", "/>
-          <text macro="point-locators"/>
-          <text macro="access-note" prefix=", "/>
-        </else>
-      </choose>
-    </layout>
+    <choose>
+      <if type="post-weblog">
+        <layout delimiter="; ">
+          <choose>
+            <if position="ibid-with-locator">
+              <group delimiter=", ">
+                <text macro="contributors-short"/>
+                <text macro="title-short"/>
+                <text macro="disambiguate-chapter"/>
+                <text macro="point-locators-subsequent"/>
+              </group>
+            </if>
+            <else-if position="ibid">
+              <group delimiter=", ">
+                <text macro="contributors-short"/>
+                <text macro="title-short"/>
+                <text macro="disambiguate-chapter"/>
+              </group>
+            </else-if>
+            <else-if position="subsequent">
+              <group delimiter=", ">
+                <text macro="contributors-short"/>
+                <text macro="title-short"/>
+                <text macro="disambiguate-chapter"/>
+                <text macro="point-locators-subsequent"/>
+              </group>
+            </else-if>
+            <else>
+              <group delimiter=", ">
+                <text macro="contributors-note"/>
+                <text macro="title-note"/>
+                <text macro="description-note"/>
+                <text macro="secondary-contributors-note"/>
+                <text macro="container-title-note"/>
+                <text macro="container-contributors-note"/>
+                <text macro="locators-note"/>
+                <text macro="collection-title-note"/>
+              </group>
+              <text macro="cite-dict"/>
+              <text macro="issue-note"/>
+              <text macro="locators-newspaper" prefix=", "/>
+              <text macro="point-locators"/>
+              <text macro="access-note" prefix=", "/>
+            </else>
+          </choose>
+        </layout>
+      </if>
+      <else>
+        <layout suffix="." delimiter="; ">
+          <choose>
+            <if position="ibid-with-locator">
+              <group delimiter=", ">
+                <text macro="contributors-short"/>
+                <text macro="title-short"/>
+                <text macro="disambiguate-chapter"/>
+                <text macro="point-locators-subsequent"/>
+              </group>
+            </if>
+            <else-if position="ibid">
+              <group delimiter=", ">
+                <text macro="contributors-short"/>
+                <text macro="title-short"/>
+                <text macro="disambiguate-chapter"/>
+              </group>
+            </else-if>
+            <else-if position="subsequent">
+              <group delimiter=", ">
+                <text macro="contributors-short"/>
+                <text macro="title-short"/>
+                <text macro="disambiguate-chapter"/>
+                <text macro="point-locators-subsequent"/>
+              </group>
+            </else-if>
+            <else>
+              <group delimiter=", ">
+                <text macro="contributors-note"/>
+                <text macro="title-note"/>
+                <text macro="description-note"/>
+                <text macro="secondary-contributors-note"/>
+                <text macro="container-title-note"/>
+                <text macro="container-contributors-note"/>
+                <text macro="locators-note"/>
+                <text macro="collection-title-note"/>
+              </group>
+              <text macro="cite-dict"/>
+              <text macro="issue-note"/>
+              <text macro="locators-newspaper" prefix=", "/>
+              <text macro="point-locators"/>
+              <text macro="access-note" prefix=", "/>
+            </else>
+          </choose>
+        </layout>
+      </else>
+    </choose>
   </citation>
   <bibliography hanging-indent="true" et-al-min="10" et-al-use-first="9" subsequent-author-substitute="&#8212;&#8212;&#8212;" entry-spacing="0">
     <sort>
