@@ -10,10 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "citeproc": "^2.1.183"
+    "citeproc": "^2.1.190"
   },
   "devDependencies": {
-    "jasmine-core": "^2.8.0",
+    "jasmine-core": "^2.99.1",
     "jshint": "^2.9.5",
     "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",
