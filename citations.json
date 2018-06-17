@@ -4,7 +4,8 @@
 		"type": "book-section",
 		"title": "The Letters of St. Augustin",
 		"container-title": "The Nicene and Post-Nicene Fathers",
-		"collection-title": "1",
+		"collection-title": "Series",
+		"collection-number": "1",
 		"publisher": "Hendrickson",
 		"publisher-place": "Peabody",
 		"page": "209-593",
@@ -255,22 +256,21 @@
 	},
 	"elowsky": {
 		"id": "elowsky",
-		"type": "book",
+		"type": "book-section",
 		"title": "John 11-21",
-		"collection-title": "Ancient Christian Commentary on Scripture : New Testament",
+		"collection-title": "ACCS",
 		"collection-number": "4B",
 		"publisher": "InterVarsity Press",
 		"publisher-place": "Downers Grove",
 		"event-place": "Downers Grove",
-		"ISBN": "978-0-8308-1489-3",
-		"shortTitle": "ACCS",
+		"note": "type: classic",
 		"editor": [
 			{
 				"family": "Elowsky",
 				"given": "Joel C."
 			}
 		],
-		"author": [
+		"original-author": [
 			{
 				"literal": "Theodore of Mopsuestia"
 			}

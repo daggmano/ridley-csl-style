@@ -326,16 +326,8 @@
     </choose>
   </macro>
   <macro name="collection-title">
-    <choose>
-      <if type="classic">
-        <text term="series" text-case="capitalize-first"/>
-        <text variable="collection-title" form="short" prefix=" "/>
-      </if>
-      <else>
-        <text variable="collection-title" form="short"/>
-        <text variable="collection-number" prefix=" "/>
-      </else>
-    </choose>
+    <text variable="collection-title" form="short"/>
+    <text variable="collection-number" prefix=" "/>
   </macro>
   <macro name="collection-title-note">
     <text variable="collection-title" form="short"/>
@@ -725,7 +717,11 @@
               <text variable="genre"/>
             </if>
             <else-if type="classic">
-              <text term="reprint" form="short" text-case="capitalize-first"/>
+              <choose>
+                <if variable="original-date">
+                  <text term="reprint" form="short" text-case="capitalize-first"/>
+                </if>
+              </choose>
             </else-if>
           </choose>
           <text macro="publisher"/>
@@ -842,10 +838,20 @@
       <text macro="locators"/>
       <choose>
         <if type="classic">
-          <text macro="collection-title" prefix=", " suffix=". "/>
-          <text macro="secondary-contributors" suffix=". "/>
-          <text macro="original-date" suffix=". "/>
-          <text macro="number-of-volumes"/>
+          <group delimiter=". ">
+            // Need prefix of ". " if elowsky (ACCS), ", " if augustine (NPNF)
+            <choose>
+              <if variable="container-title">
+                <text macro="collection-title" prefix=", "/>
+              </if>
+              <else>
+                <text macro="collection-title" prefix=". "/>
+              </else>
+            </choose>
+            <text macro="secondary-contributors"/>
+            <text macro="original-date"/>
+            <text macro="number-of-volumes"/>
+          </group>
         </if>
         <else>
           <text macro="collection-title" prefix=". "/>
