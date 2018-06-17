@@ -40,6 +40,11 @@
       <term name="editortranslator" form="verb">edited and translated by</term>
       <term name="open-quote">‘</term>
       <term name="close-quote">’</term>
+      <term name="of">of</term>
+      <term name="series">series</term>
+      <term name="reprint">reprint</term>
+      <term name="reprint" form="short">repr.</term>
+      <term name="volumes" form="short">vols.</term>
     </terms>
   <style-options punctuation-in-quote="false"/>
   </locale>
@@ -236,7 +241,7 @@
           </if>
         </choose>
       </if>
-      <else-if type="bill book graphic legal_case legislation motion_picture report song" match="any">
+      <else-if type="bill book classic graphic legal_case legislation motion_picture report song" match="any">
         <text variable="title" font-style="italic"/>
       </else-if>
       <else>
@@ -321,8 +326,16 @@
     </choose>
   </macro>
   <macro name="collection-title">
-    <text variable="collection-title" form="short"/>
-    <text variable="collection-number" prefix=" "/>
+    <choose>
+      <if type="classic">
+        <text term="series" text-case="capitalize-first"/>
+        <text variable="collection-title" form="short" prefix=" "/>
+      </if>
+      <else>
+        <text variable="collection-title" form="short"/>
+        <text variable="collection-number" prefix=" "/>
+      </else>
+    </choose>
   </macro>
   <macro name="collection-title-note">
     <text variable="collection-title" form="short"/>
@@ -330,12 +343,19 @@
   </macro>
   <macro name="container-title">
     <choose>
-      <if type="chapter paper-conference entry-dictionary" match="any">
+      <if type="chapter paper-conference entry-dictionary classic" match="any">
         <group delimiter=" " suffix=" ">
           <label variable="page" form="long" text-case="sentence"/>
           <text variable="page"/>
           <text term="in"/>
         </group>
+      </if>
+    </choose>
+    <choose>
+      <if type="classic">
+        <text term="volume" form="short" suffix=" "/>
+        <text variable="volume"/>
+        <text term="of" prefix=" " suffix=" "/>
       </if>
     </choose>
     <choose>
@@ -489,6 +509,14 @@
       </else>
     </choose>
   </macro>
+  <macro name="number-of-volumes">
+    <choose>
+      <if variable="number-of-volumes">
+        <text variable="number-of-volumes"/>
+        <text term="volumes" form="short" prefix=" "/>
+      </if>
+    </choose>
+  </macro>
   <macro name="issued">
     <choose>
       <if variable="issued">
@@ -513,6 +541,39 @@
           </else-if>
           <else>
             <date variable="issued">
+              <date-part name="day" suffix=" "/>
+              <date-part name="month" suffix=" "/>
+              <date-part name="year"/>
+            </date>
+          </else>
+        </choose>
+      </if>
+    </choose>
+  </macro>
+  <macro name="original-date">
+    <choose>
+      <if variable="original-date">
+        <choose>
+          <if type="graphic report" match="any">
+            <date variable="original-date">
+              <date-part name="day" suffix=" "/>
+              <date-part name="month" suffix=" "/>
+              <date-part name="year"/>
+            </date>
+          </if>
+          <else-if type="legal_case">
+            <text variable="authority" suffix=" "/>
+            <date variable="original-date">
+              <date-part name="year"/>
+            </date>
+          </else-if>
+          <else-if type="bill book chapter graphic legal_case legislation motion_picture paper-conference report song thesis article-journal" match="any">
+            <date variable="original-date">
+              <date-part name="year"/>
+            </date>
+          </else-if>
+          <else>
+            <date variable="original-date">
               <date-part name="day" suffix=" "/>
               <date-part name="month" suffix=" "/>
               <date-part name="year"/>
@@ -663,6 +724,9 @@
             <if type="thesis">
               <text variable="genre"/>
             </if>
+            <else-if type="classic">
+              <text term="reprint" form="short" text-case="capitalize-first"/>
+            </else-if>
           </choose>
           <text macro="publisher"/>
           <text macro="issued"/>
@@ -700,48 +764,48 @@
     </group>
   </macro>
   <macro name="citation-block">
-          <choose>
-            <if position="ibid-with-locator">
-              <group delimiter=", ">
-                <text macro="contributors-short"/>
-                <text macro="title-short"/>
-                <text macro="disambiguate-chapter"/>
-                <text macro="point-locators-subsequent"/>
-              </group>
-            </if>
-            <else-if position="ibid">
-              <group delimiter=", ">
-                <text macro="contributors-short"/>
-                <text macro="title-short"/>
-                <text macro="disambiguate-chapter"/>
-              </group>
-            </else-if>
-            <else-if position="subsequent">
-              <group delimiter=", ">
-                <text macro="contributors-short"/>
-                <text macro="title-short"/>
-                <text macro="disambiguate-chapter"/>
-                <text macro="point-locators-subsequent"/>
-              </group>
-            </else-if>
-            <else>
-              <group delimiter=", ">
-                <text macro="contributors-note"/>
-                <text macro="title-note"/>
-                <text macro="description-note"/>
-                <text macro="secondary-contributors-note"/>
-                <text macro="container-title-note"/>
-                <text macro="container-contributors-note"/>
-                <text macro="locators-note"/>
-                <text macro="collection-title-note"/>
-              </group>
-              <text macro="cite-dict"/>
-              <text macro="issue-note"/>
-              <text macro="locators-newspaper" prefix=", "/>
-              <text macro="point-locators"/>
-              <text macro="access-note" prefix=", "/>
-            </else>
-          </choose>
+    <choose>
+      <if position="ibid-with-locator">
+        <group delimiter=", ">
+          <text macro="contributors-short"/>
+          <text macro="title-short"/>
+          <text macro="disambiguate-chapter"/>
+          <text macro="point-locators-subsequent"/>
+        </group>
+      </if>
+      <else-if position="ibid">
+        <group delimiter=", ">
+          <text macro="contributors-short"/>
+          <text macro="title-short"/>
+          <text macro="disambiguate-chapter"/>
+        </group>
+      </else-if>
+      <else-if position="subsequent">
+        <group delimiter=", ">
+          <text macro="contributors-short"/>
+          <text macro="title-short"/>
+          <text macro="disambiguate-chapter"/>
+          <text macro="point-locators-subsequent"/>
+        </group>
+      </else-if>
+      <else>
+        <group delimiter=", ">
+          <text macro="contributors-note"/>
+          <text macro="title-note"/>
+          <text macro="description-note"/>
+          <text macro="secondary-contributors-note"/>
+          <text macro="container-title-note"/>
+          <text macro="container-contributors-note"/>
+          <text macro="locators-note"/>
+          <text macro="collection-title-note"/>
+        </group>
+        <text macro="cite-dict"/>
+        <text macro="issue-note"/>
+        <text macro="locators-newspaper" prefix=", "/>
+        <text macro="point-locators"/>
+        <text macro="access-note" prefix=", "/>
+      </else>
+    </choose>
   </macro>
   <citation et-al-min="4" et-al-use-first="1" disambiguate-add-names="true">
     <layout suffix="" delimiter="; ">
@@ -766,13 +830,27 @@
         <text macro="contributors"/>
         <text macro="title"/>
         <text macro="description"/>
-        <text macro="secondary-contributors"/>
+        <choose>
+          <if type="classic" match="none">
+            <text macro="secondary-contributors"/>
+          </if>
+        </choose>
         <text macro="container-title"/>
         <text macro="container-contributors"/>
         <text macro="edition-dict"/>
       </group>
       <text macro="locators"/>
-      <text macro="collection-title" prefix=". "/>
+      <choose>
+        <if type="classic">
+          <text macro="collection-title" prefix=", " suffix=". "/>
+          <text macro="secondary-contributors" suffix=". "/>
+          <text macro="original-date" suffix=". "/>
+          <text macro="number-of-volumes"/>
+        </if>
+        <else>
+          <text macro="collection-title" prefix=". "/>
+        </else>
+      </choose>
       <text macro="issue"/>
       <text macro="locators-newspaper" prefix=", "/>
       <text macro="locators-journal"/>

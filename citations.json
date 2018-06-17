@@ -1,9 +1,9 @@
 {
 	"augustine": {
 		"id": "augustine",
-		"type": "chapter",
+		"type": "book-section",
 		"title": "The Letters of St. Augustin",
-		"container-title": "Nicene and Post-Nicene Christianity",
+		"container-title": "The Nicene and Post-Nicene Fathers",
 		"collection-title": "1",
 		"publisher": "Hendrickson",
 		"publisher-place": "Peabody",
@@ -11,7 +11,8 @@
 		"volume": "1",
 		"number-of-volumes": "14",
 		"event-place": "Peabody",
-		"ISBN": "978-0-8028-8049-9",
+		"shortTitle": "N.P.N.F.",
+		"note": "original-date: 1886/1889\ntype: classic",
 		"editor": [
 			{
 				"family": "Schaff",
@@ -26,7 +27,7 @@
 		"issued": {
 			"date-parts": [
 				[
-					"1989"
+					"1994"
 				]
 			]
 		}
@@ -256,7 +257,7 @@
 		"id": "elowsky",
 		"type": "book",
 		"title": "John 11-21",
-		"collection-title": "ACCS",
+		"collection-title": "Ancient Christian Commentary on Scripture : New Testament",
 		"collection-number": "4B",
 		"publisher": "InterVarsity Press",
 		"publisher-place": "Downers Grove",
@@ -267,6 +268,11 @@
 			{
 				"family": "Elowsky",
 				"given": "Joel C."
+			}
+		],
+		"author": [
+			{
+				"literal": "Theodore of Mopsuestia"
 			}
 		],
 		"issued": {

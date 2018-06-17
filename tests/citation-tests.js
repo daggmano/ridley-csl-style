@@ -12,7 +12,7 @@ describe('Citation tests', function() {
                 locator: '199-201',
                 label: 'page'
             };
-        
+
             citeproc.updateItems(['wright']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -29,7 +29,7 @@ describe('Citation tests', function() {
                 label: 'page',
                 position: ibidWithLocator
             };
-        
+
             citeproc.updateItems(['wright']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -45,7 +45,7 @@ describe('Citation tests', function() {
                 locator: '15-17',
                 label: 'page'
             };
-        
+
             citeproc.updateItems(['hurtado']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -62,7 +62,7 @@ describe('Citation tests', function() {
                 label: 'page',
                 position: ibidWithLocator
             };
-        
+
             citeproc.updateItems(['hurtado']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -78,7 +78,7 @@ describe('Citation tests', function() {
                 locator: '29-32',
                 label: 'page'
             };
-        
+
             citeproc.updateItems(['hamilton']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -96,7 +96,7 @@ describe('Citation tests', function() {
                 label: 'page',
                 position: ibidWithLocator
             };
-        
+
             citeproc.updateItems(['hamilton']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -113,7 +113,7 @@ describe('Citation tests', function() {
                 locator: '116-118',
                 label: 'page'
             };
-        
+
             citeproc.updateItems(['bird']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -132,7 +132,7 @@ describe('Citation tests', function() {
                 label: 'page',
                 position: ibidWithLocator
             };
-        
+
             citeproc.updateItems(['bird']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -148,8 +148,7 @@ describe('Citation tests', function() {
             var citationItem = {
                 id: 'augustine',
                 locator: '28.3.5',
-                label: 'page',
-                position: ibidWithLocator
+                label: 'page'
             };
 
             citeproc.updateItems(['augustine']);
@@ -239,7 +238,7 @@ describe('Citation tests', function() {
             var result = citeproc.makeCitationCluster([citationItem]);
 
             expect(result).toBe('Rhys Bezzant, ‘Jonathon Edwards on Mentoring’, Euangelion, 17 November 2014, http://www.patheos.com/blogs/euangelion/2014/11/jonathon-edwards-on-mentoring');
-        });        
+        });
     });
 
     describe('Specific examples', function() {
@@ -252,7 +251,7 @@ describe('Citation tests', function() {
                 locator: '8',
                 label: 'page'
             };
-        
+
             citeproc.updateItems(['clement']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -270,7 +269,7 @@ describe('Citation tests', function() {
                 label: 'page',
                 position: ibidWithLocator
             };
-        
+
             citeproc.updateItems(['clement']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
