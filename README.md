@@ -12,7 +12,7 @@ Download or clone the repo, and from a terminal window `cd` to the root folder o
 
 Note that the use of `PhantomJS` may cause issues. If you are unable to run tests using the above command, you can run the tests through Chrome.
 
-    npm run chrome 
+    npm run chrome
 
 ## Notes on Zotero and 2018 Ridley Student Manual ##
 
@@ -24,6 +24,9 @@ Zotero does not support multiple publishers / places. In order to include two (o
 
     Place: Grand Rapids
     Publisher: Eerdmans; Nottingham: Apollos
+
+### Example 3.9.2e ###
+Classic works have been excluded from this CSL style at this point. The fix would require labelling the entry with type `classic`, which can be done easily enough (e.g. by entering `type: classic` in the `Notes` / `Extras` field), as well as some other additional entries. However, the `classic` type is not part of the standard CSL specification - it is part of the CSL-M extensions. Zotero throws validation errors if a CSL style using CSL-M extensions is used, and with the additional complexity in entering document details, it is felt that at this stage, classic works can wait until a later version of Zotero.
 
 ### Example 3.9.3 (i) ###
 To include the text `Kindle edition` in the citation, this text should be placed in the locator specification. For example:
