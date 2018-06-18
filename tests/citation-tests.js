@@ -12,7 +12,7 @@ describe('Citation tests', function() {
                 locator: '199-201',
                 label: 'page'
             };
-        
+
             citeproc.updateItems(['wright']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -29,7 +29,7 @@ describe('Citation tests', function() {
                 label: 'page',
                 position: ibidWithLocator
             };
-        
+
             citeproc.updateItems(['wright']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -45,7 +45,7 @@ describe('Citation tests', function() {
                 locator: '15-17',
                 label: 'page'
             };
-        
+
             citeproc.updateItems(['hurtado']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -62,7 +62,7 @@ describe('Citation tests', function() {
                 label: 'page',
                 position: ibidWithLocator
             };
-        
+
             citeproc.updateItems(['hurtado']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -78,7 +78,7 @@ describe('Citation tests', function() {
                 locator: '29-32',
                 label: 'page'
             };
-        
+
             citeproc.updateItems(['hamilton']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -96,7 +96,7 @@ describe('Citation tests', function() {
                 label: 'page',
                 position: ibidWithLocator
             };
-        
+
             citeproc.updateItems(['hamilton']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -113,7 +113,7 @@ describe('Citation tests', function() {
                 locator: '116-118',
                 label: 'page'
             };
-        
+
             citeproc.updateItems(['bird']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -132,7 +132,7 @@ describe('Citation tests', function() {
                 label: 'page',
                 position: ibidWithLocator
             };
-        
+
             citeproc.updateItems(['bird']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -141,57 +141,59 @@ describe('Citation tests', function() {
             expect(result).toBe('Bird, ‘Christ’, 123.');
         });
 
-        it('cites ancient documents (ex 3.9.2e (i))', function() {
-            var style = loadXml('./ridley-sbl.csl');
-            var citeproc = new CSL.Engine(getSys(), style);
+        // Note: Classic texts removed as of June 2018 as fixing would require the use of additional types and terms, mostly provided under CSL-M.
+        // Unfortunately at this point Zotero does not accept CSL-M extensions.
+        // it('cites ancient documents (ex 3.9.2e (i))', function() {
+        //    var style = loadXml('./ridley-sbl.csl');
+        //    var citeproc = new CSL.Engine(getSys(), style);
 
-            var citationItem = {
-                id: 'augustine',
-                locator: '28.3.5',
-                label: 'page',
-                position: ibidWithLocator
-            };
+        //    var citationItem = {
+        //        id: 'augustine',
+        //        locator: '28.3.5',
+        //        label: 'page',
+        //        position: ibidWithLocator
+        //    };
 
-            citeproc.updateItems(['augustine']);
+        //    citeproc.updateItems(['augustine']);
 
-            var result = citeproc.makeCitationCluster([citationItem]);
+        //    var result = citeproc.makeCitationCluster([citationItem]);
 
-            expect(result).toBe('Augustine, <i>Letters of St. Augustin</i> 28.3.5 (<i>N.P.N.F</i> 1:252).');
-        });
+        //    expect(result).toBe('Augustine, <i>Letters of St. Augustin</i> 28.3.5 (<i>N.P.N.F</i> 1:252).');
+        // });
 
-        it('cites ancient documents (ex 3.9.2e (ii))', function() {
-            var style = loadXml('./ridley-sbl.csl');
-            var citeproc = new CSL.Engine(getSys(), style);
+        // it('cites ancient documents (ex 3.9.2e (ii))', function() {
+        //    var style = loadXml('./ridley-sbl.csl');
+        //    var citeproc = new CSL.Engine(getSys(), style);
 
-            var citationItem = {
-                id: 'calvin',
-                locator: '165',
-                label: 'page'
-            };
+        //    var citationItem = {
+        //        id: 'calvin',
+        //        locator: '165',
+        //        label: 'page'
+        //    };
 
-            citeproc.updateItems(['calvin']);
+        //    citeproc.updateItems(['calvin']);
 
-            var result = citeproc.makeCitationCluster([citationItem]);
+        //    var result = citeproc.makeCitationCluster([citationItem]);
 
-            expect(result).toBe('John Calvin, <i>Inst</i>. 1.14.5, trans. Ford Lewis Battles, ed. John T. McNeill, 2 vols., LCC 20-21 (Philadelphia: Westminster, 1960), 1:165.');
-        });
+        //    expect(result).toBe('John Calvin, <i>Inst</i>. 1.14.5, trans. Ford Lewis Battles, ed. John T. McNeill, 2 vols., LCC 20-21 (Philadelphia: Westminster, 1960), 1:165.');
+        // });
 
-        it('cites ancient documents (ex 3.9.2e (iii))', function() {
-            var style = loadXml('./ridley-sbl.csl');
-            var citeproc = new CSL.Engine(getSys(), style);
+        // it('cites ancient documents (ex 3.9.2e (iii))', function() {
+        //    var style = loadXml('./ridley-sbl.csl');
+        //    var citeproc = new CSL.Engine(getSys(), style);
 
-            var citationItem = {
-                id: 'elowsky',
-                locator: '72',
-                label: 'page'
-            };
+        //    var citationItem = {
+        //        id: 'elowsky',
+        //        locator: '72',
+        //        label: 'page'
+        //    };
 
-            citeproc.updateItems(['elowsky']);
+        //    citeproc.updateItems(['elowsky']);
 
-            var result = citeproc.makeCitationCluster([citationItem]);
+        //    var result = citeproc.makeCitationCluster([citationItem]);
 
-            expect(result).toBe('Theodore of Mopsuestia, <i>Comm</i>. John 12:38-41, cited in Joel C. Elowsky, ed., <i>John 11-21</i>, ACCS 4B (Downers Grove: InterVarsity Press, 2007), 72.');
-        });
+        //    expect(result).toBe('Theodore of Mopsuestia, <i>Comm</i>. John 12:38-41, cited in Joel C. Elowsky, ed., <i>John 11-21</i>, ACCS 4B (Downers Grove: InterVarsity Press, 2007), 72.');
+        // });
 
         it('cites electronic sources (ex 3.9.3 (i))', function() {
             var style = loadXml('./ridley-sbl.csl');
@@ -239,7 +241,7 @@ describe('Citation tests', function() {
             var result = citeproc.makeCitationCluster([citationItem]);
 
             expect(result).toBe('Rhys Bezzant, ‘Jonathon Edwards on Mentoring’, Euangelion, 17 November 2014, http://www.patheos.com/blogs/euangelion/2014/11/jonathon-edwards-on-mentoring');
-        });        
+        });
     });
 
     describe('Specific examples', function() {
@@ -252,7 +254,7 @@ describe('Citation tests', function() {
                 locator: '8',
                 label: 'page'
             };
-        
+
             citeproc.updateItems(['clement']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
@@ -270,7 +272,7 @@ describe('Citation tests', function() {
                 label: 'page',
                 position: ibidWithLocator
             };
-        
+
             citeproc.updateItems(['clement']);
 
             var result = citeproc.makeCitationCluster([citationItem]);
