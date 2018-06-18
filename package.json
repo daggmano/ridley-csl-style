@@ -10,15 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "citeproc": "^2.1.206"
+    "citeproc": "^2.1.190"
   },
   "devDependencies": {
-    "jasmine-core": "^3.1.0",
+    "jasmine-core": "^2.99.1",
     "jshint": "^2.9.5",
-    "karma": "^2.0.3",
+    "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-cli": "^1.0.1",
-    "karma-jasmine": "^1.1.2",
+    "karma-jasmine": "^1.1.1",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-requirejs": "^1.1.0",
     "requirejs": "^2.3.5"
