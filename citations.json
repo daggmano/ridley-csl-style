@@ -1,5 +1,125 @@
 {
-    "bird": 	{
+	"augustine": {
+		"id": "augustine",
+		"type": "chapter",
+		"title": "The Letters of St. Augustin",
+		"container-title": "Nicene and Post-Nicene Christianity",
+		"collection-title": "1",
+		"publisher": "Hendrickson",
+		"publisher-place": "Peabody",
+		"page": "209-593",
+		"volume": "1",
+		"number-of-volumes": "14",
+		"event-place": "Peabody",
+		"ISBN": "978-0-8028-8049-9",
+		"editor": [
+			{
+				"family": "Schaff",
+				"given": "Philip"
+			}
+		],
+		"author": [
+			{
+				"literal": "Augustine"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1989"
+				]
+			]
+		}
+	},
+	"beasley": {
+		"id": "beasley",
+		"type": "book",
+		"title": "John",
+		"collection-title": "WBC",
+		"collection-number": "36",
+		"publisher": "Word",
+		"publisher-place": "Dallas",
+		"edition": "2nd",
+		"event-place": "Dallas",
+		"ISBN": "978-0-8499-0624-4",
+		"author": [
+			{
+				"family": "Beasley-Murray",
+				"given": "George R."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1999"
+				]
+			]
+		}
+	},
+	"bezzant": {
+		"id": "bezzant",
+		"type": "post-weblog",
+		"title": "Jonathon Edwards on Mentoring",
+		"container-title": "Euangelion",
+		"URL": "http://www.patheos.com/blogs/euangelion/2014/11/jonathon-edwards-on-mentoring",
+		"author": [
+			{
+				"family": "Bezzant",
+				"given": "Rhys"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2014",
+					11,
+					17
+				]
+			]
+		}
+	},
+	"blomberg": {
+		"id": "blomberg",
+		"type": "book",
+		"title": "Jesus and the Gospels: An Introduction and Survey",
+		"publisher": "B&H Academic",
+		"publisher-place": "Nashville",
+		"edition": "2",
+		"event-place": "Nashville",
+		"shortTitle": "Jesus and the Gospels",
+		"author": [
+			{
+				"family": "Blomberg",
+				"given": "Craig L."
+			}
+		]
+	},
+	"boda": {
+		"id": "boda",
+		"type": "book",
+		"title": "Dictionary of the Old Testament: Prophets",
+		"publisher": "IVP Academic",
+		"publisher-place": "Downers Grove",
+		"event-place": "Downers Grove",
+		"editor": [
+			{
+				"family": "Boda",
+				"given": "Mark J."
+			},
+			{
+				"family": "McConville",
+				"given": "J. Gordon"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2012"
+				]
+			]
+		}
+	},
+    "bird": {
 		"id": "bird",
 		"type": "entry-dictionary",
 		"title": "Christ",
@@ -38,6 +158,71 @@
 			]
 		}
 	},
+	"calvin": {
+		"id": "calvin",
+		"type": "book",
+		"title": "The Institutes of the Christian Religion",
+		"collection-title": "LCC",
+		"collection-number": "20-21",
+		"publisher": "Westminster",
+		"publisher-place": "Philadelphia",
+		"number-of-volumes": "2",
+		"event-place": "Philadelphia",
+		"shortTitle": "Inst",
+		"author": [
+			{
+				"family": "Calvin",
+				"given": "John"
+			}
+		],
+		"translator": [
+			{
+				"family": "Battles",
+				"given": "Ford Lewis"
+			}
+		],
+		"editor": [
+			{
+				"family": "McNeill",
+				"given": "John T."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1960"
+				]
+			]
+		}
+	},
+	"ciampa": {
+		"id": "ciampa",
+		"type": "book",
+		"title": "The First Letter to the Corinthians",
+		"collection-title": "PNTC",
+		"publisher": "Eerdmans; Nottingham: Apollos",
+		"publisher-place": "Grand Rapids",
+		"event-place": "Grand Rapids",
+		"ISBN": "978-1-84474-484-8",
+		"shortTitle": "1 Corinthians",
+		"author": [
+			{
+				"family": "Ciampa",
+				"given": "Roy E."
+			},
+			{
+				"family": "Rosner",
+				"given": "Brian S."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2010"
+				]
+			]
+		}
+	},
 	"clement": {
 		"id": "clement",
 		"type": "chapter",
@@ -67,6 +252,53 @@
 			]
 		}
 	},
+	"elowsky": {
+		"id": "elowsky",
+		"type": "book",
+		"title": "John 11-21",
+		"collection-title": "ACCS",
+		"collection-number": "4B",
+		"publisher": "InterVarsity Press",
+		"publisher-place": "Downers Grove",
+		"event-place": "Downers Grove",
+		"ISBN": "978-0-8308-1489-3",
+		"shortTitle": "ACCS",
+		"editor": [
+			{
+				"family": "Elowsky",
+				"given": "Joel C."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2007"
+				]
+			]
+		}
+	},
+	"ferdinando": {
+		"id": "ferdinando",
+		"type": "article-journal",
+		"title": "Mission: A Problem of Definition",
+		"container-title": "Themelios",
+		"page": "46-59",
+		"volume": "33",
+		"issue": "1",
+		"author": [
+			{
+				"family": "Ferdinando",
+				"given": "Keith"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2008"
+				]
+			]
+		}
+	},
     "hamilton": {
 		"id": "hamilton",
 		"type": "article-journal",
@@ -79,7 +311,8 @@
 		"author": [
 			{
 				"family": "Hamilton",
-				"given": "James M."
+				"given": "James M.",
+				"suffix": "Jr"
 			}
 		],
 		"issued": {
@@ -90,7 +323,35 @@
 			]
 		}
 	},
-    "hurtado": 	{
+	"hill": {
+		"id": "hill",
+		"type": "book",
+		"title": "A Survey of the Old Testament",
+		"publisher": "Zondervan",
+		"publisher-place": "Grand Rapids",
+		"edition": "3rd",
+		"event-place": "Grand Rapids",
+		"ISBN": "978-0-310-28095-8",
+		"shortTitle": "Survey of the OT",
+		"author": [
+			{
+				"family": "Hill",
+				"given": "Andrew E."
+			},
+			{
+				"family": "Walton",
+				"given": "John H."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2009"
+				]
+			]
+		}
+	},
+    "hurtado": {
 		"id": "hurtado",
 		"type": "chapter",
 		"title": "Following Jesus in the Gospel of Mark — And Beyond",
@@ -116,6 +377,63 @@
 			"date-parts": [
 				[
 					"1996"
+				]
+			]
+		}
+	},
+	"walton": {
+		"id": "walton",
+		"type": "book",
+		"title": "Job",
+		"collection-title": "NIVAC",
+		"publisher": "Zondervan",
+		"publisher-place": "Grand Rapids",
+		"event-place": "Grand Rapids",
+		"author": [
+			{
+				"family": "Walton",
+				"given": "John H."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2012"
+				]
+			]
+		}
+	},
+	"wilson": {
+		"id": "wilson",
+		"type": "chapter",
+		"title": "King, Messiah, and the Reign of God: Revisiting the Royal Psalms and the Shape of the Psalter",
+		"container-title": "The Book of Psalms: Composition and Reception",
+		"collection-title": "VTSup 99",
+		"publisher": "Brill",
+		"publisher-place": "Leiden",
+		"page": "391-406",
+		"event-place": "Leiden",
+		"author": [
+			{
+				"family": "Wilson",
+				"given": "Gerald H."
+			}
+		],
+		"editor": [
+			{
+				"family": "Flint",
+				"given": "Peter W."
+			},
+			{
+				"family": "Miller",
+				"given": "Patrick D.",
+				"suffix": "Jr."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2005"
 				]
 			]
 		}
