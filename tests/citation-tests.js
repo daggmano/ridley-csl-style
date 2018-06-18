@@ -83,7 +83,7 @@ describe('Citation tests', function() {
 
             var result = citeproc.makeCitationCluster([citationItem]);
 
-            expect(result).toBe('James M. Hamilton Jr, ‘Rushing Wind and Organ Music: Toward Luke’s Theology of the Spirit in Acts’, <i>RTR</i> 65 (2006): 29–32.');
+            expect(result).toBe('James M. Hamilton Jr., ‘Rushing Wind and Organ Music: Toward Luke’s Theology of the Spirit in Acts’, <i>RTR</i> 65 (2006): 29–32.');
         });
 
         it('cites a journal article - short style (ex 2.3.3)', function() {
