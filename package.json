@@ -10,18 +10,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "citeproc": "^2.1.190"
+    "citeproc": "^2.1.210"
   },
   "devDependencies": {
-    "hoek": "^4.2.1",
-    "jasmine-core": "^2.99.1",
-    "jshint": "^2.9.5",
-    "karma": "^2.0.3",
+    "hoek": "^5.0.4",
+    "jasmine-core": "^3.2.1",
+    "jshint": "^2.9.6",
+    "karma": "^3.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-cli": "^1.0.1",
-    "karma-jasmine": "^1.1.1",
+    "karma-jasmine": "^1.1.2",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-requirejs": "^1.1.0",
-    "requirejs": "^2.3.5"
+    "requirejs": "^2.3.6"
   }
 }
