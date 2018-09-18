@@ -33,5 +33,8 @@ To include the text `Kindle edition` in the citation, this text should be placed
 
     Kindle edition, ch. 14, ‘Parables: Interpretive Method’
 
+### Example 3.9.3 (ii) ###
+In oder to better display multiple references in a single citation, a period has been added to the end of Blog Post references (if they are the only / last item). See #5.
+
 
 More information will be added as the author gets time...
