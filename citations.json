@@ -195,6 +195,28 @@
 			]
 		}
 	},
+	"childs": {
+		"id": "childs",
+		"type": "book",
+		"title": "Isaiah",
+		"collection-title": "Old Testament Library",
+		"publisher": "Westminster John Knox",
+		"publisher-place": "Louisville",
+		"event-place": "Louisville",
+		"author": [
+			{
+				"family": "Childs",
+				"given": "Brevard S."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2001"
+				]
+			]
+		}
+	},
 	"ciampa": {
 		"id": "ciampa",
 		"type": "book",
@@ -377,6 +399,49 @@
 			"date-parts": [
 				[
 					"1996"
+				]
+			]
+		}
+	},
+	"motyer": {
+		"id": "motyer",
+		"type": "book",
+		"title": "The Prophecy of Isaiah: An Introduction & Commentary",
+		"publisher": "InterVarsity",
+		"publisher-place": "Downers Grove",
+		"event-place": "Downers Grove",
+		"author": [
+			{
+				"family": "Motyer",
+				"given": "J. Alec"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1993"
+				]
+			]
+		}
+	},
+	"porter": {
+		"id": "porter",
+		"type": "book",
+		"title": "The Messiah in the Old and New Testaments",
+		"collection-title": "McMaster New Testament Studies",
+		"publisher": "Eerdmans",
+		"publisher-place": "Grand Rapids",
+		"event-place": "Grand Rapids",
+		"editor": [
+			{
+				"family": "Porter",
+				"given": "Stanley E."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2007"
 				]
 			]
 		}

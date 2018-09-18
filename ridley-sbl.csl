@@ -28,7 +28,7 @@
     <category citation-format="note"/>
     <category field="theology"/>
     <summary>Society of Biblical Literature format with full notes and bibliography, modified for Ridley College</summary>
-    <updated>2017-12-18T12:00:00+00:00</updated>
+    <updated>2018-09-18T12:00:00+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en-AU">
@@ -701,7 +701,7 @@
   </macro>
   <macro name="citation-block">
     <choose>
-      <if position="ibid-with-locator">
+      <if position="ibid-with-locator ibid" match="any">
         <group delimiter=", ">
           <text macro="contributors-short"/>
           <text macro="title-short"/>
@@ -709,13 +709,6 @@
           <text macro="point-locators-subsequent"/>
         </group>
       </if>
-      <else-if position="ibid">
-        <group delimiter=", ">
-          <text macro="contributors-short"/>
-          <text macro="title-short"/>
-          <text macro="disambiguate-chapter"/>
-        </group>
-      </else-if>
       <else-if position="subsequent">
         <group delimiter=", ">
           <text macro="contributors-short"/>
@@ -744,15 +737,8 @@
     </choose>
   </macro>
   <citation et-al-min="4" et-al-use-first="1" disambiguate-add-names="true">
-    <layout suffix="" delimiter="; ">
-      <choose>
-        <if type="post-weblog">
-          <text macro="citation-block"/>
-        </if>
-        <else>
-          <text macro="citation-block" suffix="."/>
-        </else>
-      </choose>
+    <layout suffix="." delimiter="; ">
+        <text macro="citation-block"/>
     </layout>
   </citation>
   <bibliography hanging-indent="true" et-al-min="10" et-al-use-first="9" subsequent-author-substitute="&#8212;&#8212;&#8212;" entry-spacing="0">

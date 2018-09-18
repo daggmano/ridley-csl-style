@@ -240,7 +240,7 @@ describe('Citation tests', function() {
 
             var result = citeproc.makeCitationCluster([citationItem]);
 
-            expect(result).toBe('Rhys Bezzant, ‘Jonathon Edwards on Mentoring’, Euangelion, 17 November 2014, http://www.patheos.com/blogs/euangelion/2014/11/jonathon-edwards-on-mentoring');
+            expect(result).toBe('Rhys Bezzant, ‘Jonathon Edwards on Mentoring’, Euangelion, 17 November 2014, http://www.patheos.com/blogs/euangelion/2014/11/jonathon-edwards-on-mentoring.');
         });
     });
 
