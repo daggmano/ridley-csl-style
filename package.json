@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "citeproc": "2.2.1"
+    "citeproc": "2.2.10"
   },
   "devDependencies": {
     "hoek": "6.1.3",
