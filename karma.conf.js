@@ -26,6 +26,7 @@ module.exports = function(config) {
 
     proxies: {
       '/ridley-sbl.csl': '/base/ridley-sbl.csl',
+      '/smbc-sbl.csl': '/base/smbc-sbl.csl',
       '/citations.json': '/base/citations.json',
       '/locales/': '/base/locales/'
     },
