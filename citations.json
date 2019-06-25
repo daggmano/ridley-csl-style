@@ -373,7 +373,7 @@
 			]
 		}
 	},
-    "hurtado": {
+  "hurtado": {
 		"id": "hurtado",
 		"type": "chapter",
 		"title": "Following Jesus in the Gospel of Mark — And Beyond",
@@ -503,26 +503,97 @@
 			]
 		}
 	},
-    "wright": {
-        "id": "wright",
-        "type": "book",
-        "title": "The Mission of God: Unlocking the Bible's Grand Narrative",
-        "publisher": "Inter-Varsity Press",
-        "publisher-place": "Nottingham",
-        "event-place": "Nottingham",
-        "shortTitle": "Mission of God",
-        "author": [
-            {
-                "family": "Wright",
-                "given": "Christopher J. H."
-            }
-        ],
-        "issued": {
-            "date-parts": [
-                [
-                    "2006"
-                ]
-            ]
-        }
+  "wright": {
+    "id": "wright",
+    "type": "book",
+    "title": "The Mission of God: Unlocking the Bible's Grand Narrative",
+    "publisher": "Inter-Varsity Press",
+    "publisher-place": "Nottingham",
+    "event-place": "Nottingham",
+    "shortTitle": "Mission of God",
+    "author": [
+      {
+        "family": "Wright",
+        "given": "Christopher J. H."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          "2006"
+  			]
+      ]
     }
+  },
+	"smbc-coulton": {
+		"id": "smbc-coulton",
+		"type": "book",
+		"title": "Hitting the Holy Road",
+		"publisher": "IVP",
+		"publisher-place": "Nottingham",
+		"author": [
+			{
+				"family": "Coulton",
+				"given": "Stuart"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2011"
+				]
+			]
+		}
+	},
+	"smbc-johansson": {
+		"id": "smbc-johansson",
+		"type": "article-journal",
+		"title": "Kyrios in the Gospel of Mark",
+		"container-title": "Journal for the Study of the New Testament",
+		"page": "101-124",
+		"volume": "33",
+		"journalAbbreviation": "JSNT",
+		"author": [
+			{
+				"family": "Johansson",
+				"given": "Daniel"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2010"
+				]
+			]
+		}
+	},
+	"smbc-merrill": {
+		"id": "smbc-merrill",
+		"type": "chapter",
+		"container-title": "A Guide to Old Testament Theology and Exegesis",
+		"title": "Old Testament History: A Theological Perspective",
+		"shortTitle": "Old Testament History",
+		"publisher": "Zondervan",
+		"publisher-place": "Grand Rapids",
+		"page": "65-82",
+		"author": [
+			{
+				"family": "Merrill",
+				"given": "Eugene H."
+			}
+		],
+		"editor": [
+			{
+				"family": "VanGemeren",
+				"given": "Willem A."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1999"
+				]
+			]
+		}
+	}
 }
