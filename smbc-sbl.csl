@@ -361,7 +361,7 @@
   </macro>
   <macro name="editor-short">
     <names variable="editor">
-      <name name-as-sort-order="last" form="short" and="text" sort-separator=", " delimiter=", " delimiter-precedes-last="always"/>
+      <name form="short" and="text" sort-separator=", " delimiter=", " delimiter-precedes-last="always"/>
     </names>
   </macro>
   <macro name="container-title-note">
