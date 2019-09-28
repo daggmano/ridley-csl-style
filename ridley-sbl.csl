@@ -28,7 +28,7 @@
     <category citation-format="note"/>
     <category field="theology"/>
     <summary>Society of Biblical Literature format with full notes and bibliography, modified for Ridley College</summary>
-    <updated>2018-09-18T12:00:00+00:00</updated>
+    <updated>2019-09-28T12:00:00+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en-AU">
@@ -312,7 +312,7 @@
         <text term="in" suffix=" "/>
         <text variable="container-title" font-style="italic"/>
       </if>
-      <else-if type="article-journal">
+      <else-if type="article-journal article-magazine" match="any">
         <text variable="container-title" font-style="italic" form="short"/>
       </else-if>
       <else-if type="entry-dictionary" match="none">
@@ -433,7 +433,7 @@
   </macro>
   <macro name="locators">
     <choose>
-      <if type="article-journal">
+      <if type="article-journal article-magazine" match="any">
         <group prefix=" " delimiter=".">
           <text variable="volume"/>
           <number variable="issue"/>
@@ -614,7 +614,7 @@
     <choose>
       <if type="entry-dictionary">
       </if>
-      <else-if type="article-journal">
+      <else-if type="article-journal article-magazine" match="any">
         <text variable="volume" prefix=" "/>
         <text variable="issue" prefix="."/>
         <text macro="issued" prefix=" (" suffix=")"/>
@@ -643,7 +643,7 @@
   </macro>
   <macro name="issue">
     <choose>
-      <if type="article-journal">
+      <if type="article-journal article-magazine" match="any">
         <text macro="issued" prefix=" (" suffix=")"/>
       </if>
       <else-if type="speech">

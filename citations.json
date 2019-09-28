@@ -403,6 +403,26 @@
 			]
 		}
 	},
+	"krupp": {
+		"id": "krupp",
+		"type": "article-magazine",
+		"title": "Golden Tongue & Iron Will",
+		"container-title": "Christian History",
+		"volume": "44",
+		"author": [
+			{
+				"family": "Krupp",
+				"given": "Robert A."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1994"
+				]
+			]
+		}
+	},	
 	"motyer": {
 		"id": "motyer",
 		"type": "book",

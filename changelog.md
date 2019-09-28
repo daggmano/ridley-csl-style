@@ -1,5 +1,8 @@
 # Changelog #
 
+## 2019-09-28 ##
+* Ridley: Magazine citations now include volume number. Fixes #14.
+
 ## 2019-06-25 ##
 * Added CSL file for Sydney Missionary & Bible College (SMBC).
 
