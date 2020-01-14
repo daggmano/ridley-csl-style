@@ -1,4 +1,4 @@
-# Ridley CSL Style [![Build Status](https://travis-ci.org/daggmano/ridley-csl-style.svg)](https://travis-ci.org/daggmano/ridley-csl-style)
+# Ridley CSL Style [![Build Status](https://travis-ci.org/daggmano/ridley-csl-style.svg)](https://travis-ci.org/daggmano/ridley-csl-style) [![Known Vulnerabilities](https://snyk.io/test/github/daggmano/ridley-csl-style/badge.svg?targetFile=package.json)](https://snyk.io/test/github/daggmano/ridley-csl-style?targetFile=package.json)
 
 This project provides a CSL style suitable for Ridley College.  It is based on the Society of Biblical Literature (2nd Edition, full note) style, but with tweaks
 to better match Ridley's specification.
