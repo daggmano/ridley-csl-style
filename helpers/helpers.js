@@ -1,21 +1,21 @@
-var module = {};
+const module = {};
 
 function loadXml(url) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open('GET', url, false);
-    xhttp.overrideMimeType('application/xml');
-    xhttp.send();
+    const xHttp = new XMLHttpRequest();
+    xHttp.open('GET', url, false);
+    xHttp.overrideMimeType('application/xml');
+    xHttp.send();
 
-    var xml = xhttp.responseXML;
+    const xml = xHttp.responseXML;
     return xml.documentElement;
 }
 
 function loadJson(url) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open('GET', url, false);
-    xhttp.overrideMimeType('application/json');
-    xhttp.send();
+    const xHttp = new XMLHttpRequest();
+    xHttp.open('GET', url, false);
+    xHttp.overrideMimeType('application/json');
+    xHttp.send();
 
-    var json = xhttp.response;
+    const json = xHttp.response;
     return JSON.parse(json);
 }

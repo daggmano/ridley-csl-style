@@ -12,8 +12,8 @@ describe('System tests', function() {
     });
 
     it('expects to be able to create a CSL instance', function() {
-        var style = loadXml('./ridley-sbl.csl');
-        var citeproc = new CSL.Engine(getSys(), style);
+        const style = loadXml('./ridley-sbl.csl');
+        const citeproc = new CSL.Engine(getSys(), style);
 
         expect(citeproc).toBeDefined();
     });

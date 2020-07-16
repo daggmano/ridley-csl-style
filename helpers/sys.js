@@ -1,9 +1,9 @@
 function getSys() {
 
-    var sys = {};
+    const sys = {};
 
-    var citationItems = loadJson('./citations.json');
-    
+    const citationItems = loadJson('./citations.json');
+
     sys.retrieveLocale = function (locale) {
         return loadXml('./locales/locales-' + locale + '.xml');
     };

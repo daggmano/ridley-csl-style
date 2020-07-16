@@ -16,8 +16,8 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       './helpers/helpers.js',
-      './helpers/sys.js',
       './node_modules/citeproc/citeproc_commonjs.js',
+      './helpers/sys.js',
       './tests/*.js',
       { pattern: './*.csl', included: false, served: true },
       { pattern: './citations.json', included: false, served: true },
