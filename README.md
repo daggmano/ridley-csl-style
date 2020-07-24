@@ -4,7 +4,7 @@ This project provides a CSL style suitable for Ridley College.  It is based on t
 to better match Ridley's specification.
 
 ## Development Note ##
-After a recent update to the `citeproc` package, `npm test` no longer allows tests to pass. This is under investigation. `npm run chrome` should be used instead until this issue is resolved.
+After a recent update to the `citeproc` package, `npm test` no longer allows tests to pass. This is under investigation. `npm run chrome` should be used instead until this issue is resolved. This is causing the TravisCI build to fail.
 
 ## Running Tests ##
 
