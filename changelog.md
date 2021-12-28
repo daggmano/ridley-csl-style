@@ -1,5 +1,9 @@
 # Changelog #
 
+## 2021-12-21 ##
+* Move to use `yarn` instead of `npm`.
+* SMBC: Add tests for multiple authors for books. Missing period fixed for book citations.
+
 ## 2019-09-28 ##
 * Ridley: Magazine citations now include volume number. Fixes #14.
 

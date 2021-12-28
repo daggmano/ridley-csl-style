@@ -4,18 +4,18 @@ This project provides a CSL style suitable for Ridley College.  It is based on t
 to better match Ridley's specification.
 
 ## Development Note ##
-After a recent update to the `citeproc` package, `npm test` no longer allows tests to pass. This is under investigation. `npm run chrome` should be used instead until this issue is resolved. This is causing the TravisCI build to fail.
+After a recent update to the `citeproc` package, `yarn test` no longer allows tests to pass. This is under investigation. `yarn chrome` should be used instead until this issue is resolved. This is causing the TravisCI build to fail.
 
 ## Running Tests ##
 
 Download or clone the repo, and from a terminal window `cd` to the root folder of the project.  Restore the required node packages, and then run the tests.
 
-    npm install
-    npm test
+    `yarn`
+    `yarn test`
 
 Note that the use of `PhantomJS` may cause issues. If you are unable to run tests using the above command, you can run the tests through Chrome.
 
-    npm run chrome
+    `yarn chrome`
 
 ## Notes on Zotero and 2018 Ridley Student Manual ##
 

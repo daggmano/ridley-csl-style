@@ -928,7 +928,7 @@
     </group>
   </macro>
   <citation et-al-min="4" et-al-use-first="1" disambiguate-add-names="true">
-    <layout suffix="" delimiter="; ">
+    <layout suffix="." delimiter="; ">
       <choose>
         <!-- Lexicon/Dictionary/Encyclopedia -->
         <if type="entry-dictionary entry-encyclopedia" match="any">

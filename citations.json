@@ -422,7 +422,7 @@
 				]
 			]
 		}
-	},	
+	},
 	"motyer": {
 		"id": "motyer",
 		"type": "book",
@@ -612,6 +612,63 @@
 			"date-parts": [
 				[
 					"1999"
+				]
+			]
+		}
+	},
+	"smbc-nienhuis": {
+		"id": "smbc-nienhuis",
+		"type": "book",
+		"title": "Reading the Epistles of James, Peter, John, and Jude as Scripture: The Shaping and Shape of a Canonical Collection",
+		"shortTitle": "Reading the Epistles of James, Peter, John, and Jude as Scripture",
+		"publisher": "Eerdmans",
+		"publisher-place": "Grand Rapids",
+		"author": [
+			{
+				"family": "Nienhuis",
+				"given": "David R."
+			},
+			{
+				"family": "Wall",
+				"given": "Robert W."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	},
+	"smbc-scott": {
+		"id": "smbc-scott",
+		"type": "book",
+		"title": "Reading New Testament Greek",
+		"publisher": "Hendrickson",
+		"publisher-place": "Peabody, MA",
+		"author": [
+			{
+				"family": "Scott",
+				"given": "Bernard Brandon"
+			},
+			{
+				"family": "Dean",
+				"given": "Margaret"
+			},
+			{
+				"family": "Sparks",
+				"given": "Kristen"
+			},
+			{
+				"family": "LaZar",
+				"given": "Frances"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1993"
 				]
 			]
 		}
