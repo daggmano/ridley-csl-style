@@ -1,6 +1,6 @@
 # Changelog #
 
-## 2021-12-21 ##
+## 2021-12-28 ##
 * Move to use `yarn` instead of `npm`.
 * SMBC: Add tests for multiple authors for books. Missing period fixed for book citations.
 
