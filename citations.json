@@ -217,6 +217,24 @@
 			]
 		}
 	},
+	"chisholm": {
+		"id": "chisholm",
+		"type": "song",
+		"title": "Great Is Thy Faithfulness",
+		"author": [
+			{
+				"family": "Chisholm",
+				"given": "Thomas O."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1923"
+				]
+			]
+		}
+	},
 	"ciampa": {
 		"id": "ciampa",
 		"type": "book",
